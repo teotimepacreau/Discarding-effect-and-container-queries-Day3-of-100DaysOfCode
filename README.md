@@ -9,7 +9,7 @@
 - images taking up all parent thanks to Flexbox
 - input styling with ellipsis to avoid text overflow
 - CSS animation + transition to give it the smooth effect
-- Font-awesome icons
+- hover-effect
 - Flexbox to create component and align + Grid for the general UI
 
 # 🛠️
