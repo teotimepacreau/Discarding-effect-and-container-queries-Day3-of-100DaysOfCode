@@ -132,7 +132,7 @@ h1 {
   --txt: #9C3A09;
   --accent: #122f24;
 }
-
+/* UI */
 body {
   background-color: var(--accent);
 }
@@ -143,30 +143,27 @@ body {
   grid-template-columns: minmax(var(--rythmeM), auto) minmax(auto, 100ch) minmax(var(--rythmeM), auto);
   place-items: center;
 }
-
+/* ELEMENTS */
 .listofcards {
   display: flex;
   gap: var(--rythmeS);
   grid-column: 2 / 3;
   width: 100%;
 }
-
+/* MEDIA QUERIES */
 @media (width > 1000px) {
   .listofcards {
     flex-direction: column;
   }
 }
 
-.listofcards .card:hover {
-  background: var(--txt);
-  color: white;
+@media (width < 800px) {
+  .listofcards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
-
-.listofcards .card-wrapper:hover ~ .card-wrapper {
-  transform: translateX(40px) rotate(2deg) scale(.7);
-  opacity: .7;
-  transition: all ease-in 1s;
-}
+/* CONTAINER QUERIES */
 .card-wrapper {
   container-type: inline-size;
   width: 100%;
@@ -368,4 +365,16 @@ h1 {
 p {
   font-family: "Cygre-Medium", sans-serif;
 }
+}
+
+/* DISCARDING EFFECT */
+.listofcards .card:hover {
+  background: var(--txt);
+  color: white;
+}
+
+.listofcards .card-wrapper:hover ~ .card-wrapper {
+  transform: translateX(40px) rotate(2deg) scale(.7);
+  opacity: .7;
+  transition: all ease-in 1s;
 }
