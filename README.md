@@ -3,6 +3,7 @@
 
 # Project goal
 
+- discarding effect with translateX + rotate + scale
 - enabling dynamic and adaptive styling with container queries (the card change its layout based on it's own size)
 - position relative and position absolute to create the top left icon
 - border-radius container handle with images thanks to "overflow: hidden"
