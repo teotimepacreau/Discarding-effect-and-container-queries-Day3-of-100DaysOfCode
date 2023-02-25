@@ -11,6 +11,7 @@
 - input styling with ellipsis to avoid text overflow
 - CSS animation + transition to give it the smooth effect
 - hover-effect
+- responsive handle
 - Flexbox to create component and align + Grid for the general UI
 
 # 🛠️
