@@ -157,11 +157,12 @@ body {
   }
 }
 
-@media (width < 800px) {
+@media (width < 700px) {
   .listofcards {
     flex-wrap: wrap;
   }
 }
+
 /* CONTAINER QUERIES */
 .card-wrapper {
   container-type: inline-size;
